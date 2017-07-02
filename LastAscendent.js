@@ -19,7 +19,7 @@ function findOldestAncester(ancesterName, name, degree, father){
 console.log(findOldestAncester("?","Carolus Haverbeke",0,1));
 console.log(findOldestAncester("?","Carolus Haverbeke",0,0));
 
-function findOldestAncester2(ancesterName, name, degree, sex){
+function findOldestAncester2(ancesterName, name, degree, sex, dna){
   //console.log(ancesterName + " " + name + " " + degree + " " + sex);
   var ancester = ancestries.find(function(element){
     return element.name == (ancesterName == "?" ? name : ancesterName)
